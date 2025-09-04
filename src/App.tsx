@@ -12,7 +12,6 @@ function App() {
   const [isEditing, setIsEditing] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
 
- 
   useEffect(() => {
     loadNotes();
   }, []);
@@ -106,6 +105,7 @@ function App() {
   return (
     <Container maxWidth="sm" sx={{ py: 2, minHeight: "500px", width: "400px" }}>
       <Stack spacing={3}>
+      
         <Header />
 
         <NoteForm
